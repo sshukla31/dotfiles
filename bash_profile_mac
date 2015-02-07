@@ -14,10 +14,7 @@ fi
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
 
-alias n4='ssh sandeep@niara4'
-alias devvm='ssh root@10.43.7.152'        # pass: testpw
-alias analyzer='ssh root@10.43.7.165'  # pass: testpw
-alias sensor='ssh root@10.43.7.105'    # pass: tulita123
+# alias n4='ssh'
 
 
 #
