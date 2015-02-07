@@ -1,0 +1,23 @@
+# Setup virutalenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/test_programs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# MacPort
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+
+# Not really the right place for it, but mixing in virtualenv path mods here too
+venv_prompt ()
+{
+    if [ ! -z "$VIRTUAL_ENV" ]
+    then
+        echo "(${c_host}`basename $VIRTUAL_ENV`${c_reset}) "
+    else
+        echo ""
+    fi
+}
+
+
+prompt="\$(venv_prompt)${path} \$(git_prompt) \n[${user}@${host}]\$ "
+PROMPT_COMMAND="$TITLEBAR PS1=\"${prompt}\" ;"
