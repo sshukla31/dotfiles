@@ -3,9 +3,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/test_programs
 source /usr/local/bin/virtualenvwrapper.sh
 
-# MacPort
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 
 # Not really the right place for it, but mixing in virtualenv path mods here too
 venv_prompt ()
